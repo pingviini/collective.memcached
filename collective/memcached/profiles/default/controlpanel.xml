@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<object name="portal_controlpanel" meta_type="Plone Control Panel Tool">
+  <configlet title="Configure Memcached utility"
+    action_id="memcached-settings"
+    appId="collective.memcached" category="Products"
+    condition_expr=""
+    url_expr="string:${portal_url}/@@memcached-settings"
+    visible="True"
+    icon_expr="string:$portal_url/++resource++collective.memcached/simplejournal.png">
+    <permission>Manage portal</permission>
+    Configure Memcached utility
+  </configlet>
+</object>
