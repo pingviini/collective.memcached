@@ -1,7 +1,7 @@
 # from plone.testing import z2
 from plone.app.testing import PloneSandboxLayer
 from plone.app.testing import PLONE_FIXTURE
-from plone.app.testing import IntegrationTesting # , FunctionalTesting
+from plone.app.testing import IntegrationTesting, FunctionalTesting
 
 
 class MemcachedTestFixture(PloneSandboxLayer):
@@ -18,3 +18,5 @@ class MemcachedTestFixture(PloneSandboxLayer):
 MEMCACHED_FIXTURE = MemcachedTestFixture()
 MEMCACHED_INTEGRATION_TESTING = IntegrationTesting(bases=(MEMCACHED_FIXTURE,),
                                                  name="memcached:Integration")
+MEMCACHED_FUNCTIONAL_TESTING = FunctionalTesting(bases=(MEMCACHED_FIXTURE,),
+                                                 name="memcached:Functional")
