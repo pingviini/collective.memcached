@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<componentregistry>
+  <utilities>
+    <utility
+      interface="collective.memcached.interfaces.IMemcachedClient"
+      factory="collective.memcached.utility.MemcachedClient"
+    />
+  </utilities>
+</componentregistry>

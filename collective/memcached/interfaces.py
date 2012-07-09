@@ -9,8 +9,9 @@ class IMemcachedControlPanel(Interface):
     memcached_hosts = schema.List(
         title=_(u"Memcached server hosts & ports"),
         description=_(u"eg. localhost:11211"),
-        value_type=schema.TextLine(title=u"host"))
+        value_type=schema.TextLine(title=u"host"),
+        default=['localhost:11211'])
 
 
 class IMemcachedClient(Interface):
-    """Marker interface for memcached global utility"""
+    """Marker interface for memcached utility"""
