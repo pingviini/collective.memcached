@@ -1,4 +1,8 @@
-import pylibmc
+try:
+    import pylibmc as memcache
+except ImportError:
+    import memcache
+
 import logging
 
 from threading import local
@@ -26,7 +30,7 @@ class MemcachedClient(object):
         if connection is None:
             settings = self.getSettings()
             logger.info("Creating new memcache connection")
-            connection = pylibmc.Client(settings.memcached_hosts)
+            connection = memcache.Client(settings.memcached_hosts)
             self._v_thread_local.connection = connection
 
         return connection

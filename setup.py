@@ -25,11 +25,12 @@ setup(name='collective.memcached',
       zip_safe=False,
       install_requires=[
           'setuptools',
-          'pylibmc',
           'Products.CMFPlone',
       ],
       extras_require={
-          'test': 'plone.app.testing'},
+          'test': 'plone.app.testing',
+          'pylibmc': 'pylibmc',
+          'python-memcached': 'python-memcached'},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
