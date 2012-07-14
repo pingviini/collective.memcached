@@ -16,6 +16,11 @@
     permission="cmf.ManagePortal"
     />
 
+  <browser:resource
+    name="memcached.png"
+    image="memcached.png"
+    />
+
   <genericsetup:registerProfile
     name="default"
     title="Memcached utility"

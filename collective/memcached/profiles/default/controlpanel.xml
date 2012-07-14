@@ -6,7 +6,7 @@
     condition_expr=""
     url_expr="string:${portal_url}/@@memcached-settings"
     visible="True"
-    icon_expr="string:$portal_url/++resource++collective.memcached/simplejournal.png">
+    icon_expr="string:$portal_url/++resource++memcached.png">
     <permission>Manage portal</permission>
     Configure Memcached utility
   </configlet>
