@@ -23,8 +23,8 @@ Usage
 -----
 
 #. Add collective.memcached to your buildout eggs list. You must also pick
-   the connector library as package extras. Choices are pylibmc and
-   python-memcached. Your eggs list should look something like this::
+   the connector library as package extras. Choices are pylibmc_ and
+   python-memcached_. Your eggs list should look something like this::
     eggs = 
         Plone
         ...
